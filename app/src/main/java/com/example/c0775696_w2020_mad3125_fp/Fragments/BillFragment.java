@@ -61,8 +61,6 @@ public class BillFragment extends Fragment {
             totalAmount += bills.get(j).getBillTotal();
         }
 
-        // Log.d("Tag", String.valueOf(totalAmount));
-
         for(int i =0; i <bills.size(); i++)
         {
             if(bills.get(i).getBillId().contains("MB"))
