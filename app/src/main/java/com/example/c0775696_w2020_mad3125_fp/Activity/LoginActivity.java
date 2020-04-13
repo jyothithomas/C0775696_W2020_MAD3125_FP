@@ -68,11 +68,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 loginPrefsEditor.commit();
                 //    doSomethingElse();
             }
-            doSomethingElse();
+            goNext();
         }
     }
 
-    public void doSomethingElse() {
+    public void goNext() {
         if (editTextUsername.getText().toString().equals("jyothi05@mail.com") && (editTextPassword.getText().toString().equals("jyothi05"))) {
             startActivity(new Intent(LoginActivity.this, CustomerListActivity.class));
             LoginActivity.this.finish();

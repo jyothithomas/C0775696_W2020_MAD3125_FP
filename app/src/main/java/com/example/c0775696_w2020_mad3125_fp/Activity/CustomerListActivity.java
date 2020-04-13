@@ -9,12 +9,16 @@ import android.os.Bundle;
 import com.example.c0775696_w2020_mad3125_fp.Adapter.CustomerAdapter;
 import com.example.c0775696_w2020_mad3125_fp.Model.Customer;
 import com.example.c0775696_w2020_mad3125_fp.R;
+import com.example.c0775696_w2020_mad3125_fp.Util.DataSingelton;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 
 public class CustomerListActivity extends AppCompatActivity {
     private RecyclerView rvCustomers;
-    private ArrayList<Customer> customers;
+    private ArrayList customers;
+    private ArrayList customerArrayList;
     private CustomerAdapter customerAdapter;
 
     @Override
@@ -34,13 +38,12 @@ public class CustomerListActivity extends AppCompatActivity {
     }
 
     private void populateCustomers() {
-        customers = new ArrayList<>();
-        customers.add(new Customer("C01","Jyothi","Thomas",
-                "Female","jyothi@mail.com","joe123","joe123","Scarborough",
-                "01/01/1991",R.drawable.women));
-        customers.add(new Customer("C02","James","Thomas",
-                "Male","james@mail.com","jamz123","jamz123","Kerala",
-                "01/01/1988",R.drawable.man));
+        DataSingelton.getInstance().populateData();
+        customers = new ArrayList();
+        HashMap<String, Customer> customerHashMap = DataSingelton.getInstance().getCustomerMap();
+        Collection<Customer> demoValues = customerHashMap.values();
+        customerArrayList = new ArrayList<>(demoValues);
+        customers.addAll(customerArrayList);
 
     }
 
