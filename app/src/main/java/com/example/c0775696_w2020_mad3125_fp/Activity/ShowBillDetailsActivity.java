@@ -55,6 +55,7 @@ public class ShowBillDetailsActivity extends AppCompatActivity {
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
         mFragmentTransaction.add(R.id.container, new BillFragment());
+        mFragmentTransaction.add(R.id.container2,new BillFragment());
         mFragmentTransaction.commit();
 
 //        mFragmentTransaction = mFragmentManager.beginTransaction();

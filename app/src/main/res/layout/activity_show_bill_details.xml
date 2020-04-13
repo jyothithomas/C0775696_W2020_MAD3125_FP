@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.PersonInformationEntryActivity">
+        tools:context=".Activity.ShowBillDetailsActivity">
 
         <FrameLayout
             android:id="@+id/container"
@@ -64,14 +64,14 @@
             android:layout_marginTop="40dp"
             android:layout_marginEnd="86dp"
             android:layout_marginBottom="647dp"
-            android:background="@color/colorPrimary"
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@color/design_default_color_on_secondary"
+            android:backgroundTint="@color/design_default_color_on_secondary"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:shadowColor="#0E0000"
             android:text="Total Bill Amount"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="@color/design_default_color_background"
             android:textColorHighlight="@color/colorPrimary"
             android:textColorHint="#000000"
             android:textColorLink="#000000"
