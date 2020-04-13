@@ -1,17 +1,19 @@
 package com.example.c0775696_w2020_mad3125_fp.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.c0775696_w2020_mad3125_fp.R;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -45,6 +47,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             editTextPassword.setText(loginPreferences.getString("password", ""));
             saveLoginCheckBox.setChecked(true);
         }
+
     }
 
     public void onClick(View view) {
@@ -72,6 +75,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
+
     public void goNext() {
         if (editTextUsername.getText().toString().equals("jyothi05@mail.com") && (editTextPassword.getText().toString().equals("jyothi05"))) {
             startActivity(new Intent(LoginActivity.this, CustomerListActivity.class));
@@ -90,4 +94,5 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     .show();
         }
     }
+
 }

@@ -1,10 +1,10 @@
 package com.example.c0775696_w2020_mad3125_fp.Activity;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
 
 import com.example.c0775696_w2020_mad3125_fp.Adapter.CustomerAdapter;
 import com.example.c0775696_w2020_mad3125_fp.Model.Customer;
@@ -36,6 +36,12 @@ public class CustomerListActivity extends AppCompatActivity {
         rvCustomers.setAdapter(customerAdapter);
 
     }
+/*    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.mymenu, menu);
+        return true;
+    }*/
 
     private void populateCustomers() {
         DataSingelton.getInstance().populateData();
