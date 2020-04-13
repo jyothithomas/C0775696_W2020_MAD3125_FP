@@ -1,4 +1,4 @@
-package com.example.c0775696_w2020_mad3125_fp;
+package com.example.c0775696_w2020_mad3125_fp.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
+import com.example.c0775696_w2020_mad3125_fp.R;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
