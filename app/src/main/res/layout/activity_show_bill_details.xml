@@ -69,7 +69,7 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:shadowColor="#0E0000"
-            android:text="TOTAL AMOUNT"
+            android:text="Total Bill Amount"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textColorHighlight="@color/colorPrimary"
@@ -94,7 +94,6 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:shadowColor="#0E0000"
-            android:text="TOTAL"
             android:textAlignment="center"
             android:textColor="#020000"
             android:textColorHighlight="@color/colorPrimary"
@@ -110,16 +109,18 @@
 
         <ImageView
             android:id="@+id/imgAddBill"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="49dp"
+            android:layout_height="54dp"
             android:layout_marginStart="333dp"
             android:layout_marginTop="34dp"
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="656dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.892"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/ic_action_addbill" />
 
 

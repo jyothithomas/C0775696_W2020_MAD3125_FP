@@ -3,12 +3,9 @@ package com.example.c0775696_w2020_mad3125_fp.Model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Dictionary;
 import java.util.HashMap;
-import java.util.Map;
 
 public class Customer implements Parcelable {
 
@@ -205,8 +202,8 @@ public class Customer implements Parcelable {
 
     public ArrayList<Bill> getBills()
     {
-        Collection<Bill> demoValues = customerBills.values();
-        ArrayList<Bill> billsList = new ArrayList<>(demoValues);
+        Collection<Bill> tempBillValues = customerBills.values();
+        ArrayList<Bill> billsList = new ArrayList<>(tempBillValues);
         return billsList;
     }
 
