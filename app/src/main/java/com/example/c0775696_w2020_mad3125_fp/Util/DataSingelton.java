@@ -28,27 +28,27 @@ public class DataSingelton {
         Customer c2 = new Customer("C02","James","Thomas",
                 "Male","james@mail.com","jamz123","jamz123","Kerala",
                 "01/01/1988",R.drawable.man);
-        Mobile m1 = new Mobile("MB100",
+        Mobile m1 = new Mobile("MB01",
                 "9/10/2010",
                 Bill.BillType.Mobile,
                 "APPLE INC.",
-                "Student Plan",
-                "4379077578",
-                1,
-                6);
-        Hydro h1 = new Hydro( "HY100",
+                "All Canada Plan",
+                "4372435081",
+                3,
+                12);
+        Hydro h1 = new Hydro( "HY01",
                 "12/12/2012",
                 Bill.BillType.Hydro,
-                "PUREWATA",
-                22);
-        Internet in1 = new Internet("IN100",
+                "ElectroHydro",
+                18);
+        Internet in1 = new Internet("IN01",
                "11/1/2013",
                 Bill.BillType.Internet,
-                "SKYLINK",
-                22.8);
-        c2.addBill("IN100", in1);
-        c1.addBill("MB100", m1);
-        c1.addBill("HY100", h1);
+                "Rogers",
+                21.3);
+        c2.addBill("IN01", in1);
+        c1.addBill("MB01", m1);
+        c1.addBill("HY01", h1);
         customerMap.put(c1.getCustomerId(),c1);
         customerMap.put(c2.getCustomerId(),c2);
         //customerMap.put(c3.getCustomerId(),c3);
