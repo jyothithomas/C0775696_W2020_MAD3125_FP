@@ -1,6 +1,8 @@
 package com.example.c0775696_w2020_mad3125_fp.Activity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -36,12 +38,12 @@ public class CustomerListActivity extends AppCompatActivity {
         rvCustomers.setAdapter(customerAdapter);
 
     }
-/*    @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.mymenu, menu);
         return true;
-    }*/
+    }
 
     private void populateCustomers() {
         DataSingelton.getInstance().populateData();
