@@ -21,9 +21,9 @@
         android:layout_marginBottom="190dp"
         android:gravity="center_horizontal"
         android:id="@+id/textView"
-        android:textColor="#ffa000"
+        android:textColor="#333"
         android:text="Jyothi Thomas C0775696"
-        android:textSize="20dp"
+        android:textSize="24dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"/>
