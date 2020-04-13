@@ -77,8 +77,16 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             LoginActivity.this.finish();
         }
         else {
-            editTextUsername.setError("Login Failed! Enter valid Username");
-            editTextPassword.setError("Login Failed! Enter valid Password");
+            new MaterialAlertDialogBuilder(LoginActivity.this)
+                    .setTitle("Invalid username or password")
+                    .setMessage("Please enter valid credentials")
+                    .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    })
+                    .show();
         }
     }
 }
