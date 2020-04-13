@@ -63,7 +63,7 @@ public class BillFragment extends Fragment {
 
         for(int i =0; i <bills.size(); i++)
         {
-            if(bills.get(i).getBillId().contains("MB"))
+            if(bills.get(i).getBillType().equals(Bill.BillType.Mobile))
             {
                 txtBillId.setText(bills.get(i).getBillId());
                 imgBillType.setImageResource(R.drawable.mobileicon);
@@ -71,7 +71,7 @@ public class BillFragment extends Fragment {
                 txtBillDate.setText(bills.get(i).getBillDate().toString());
             }
 
-            if(bills.get(i).getBillId().contains("HY"))
+            if(bills.get(i).getBillType().equals(Bill.BillType.Hydro))
             {
                 txtBillId.setText(bills.get(i).getBillId());
                 imgBillType.setImageResource(R.drawable.hydroicon);
@@ -79,7 +79,7 @@ public class BillFragment extends Fragment {
                 txtBillDate.setText(bills.get(i).getBillDate().toString());
             }
 
-            if(bills.get(i).getBillId().contains("IN"))
+            if(bills.get(i).getBillType().equals(Bill.BillType.Internet))
             {
                 txtBillId.setText(bills.get(i).getBillId());
                 imgBillType.setImageResource(R.drawable.interneticon);
