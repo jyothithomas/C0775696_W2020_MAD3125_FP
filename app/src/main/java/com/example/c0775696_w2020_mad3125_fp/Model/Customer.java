@@ -212,11 +212,11 @@ public class Customer implements Parcelable {
 
     public double getTotalAmount()
     {
-        double allTotal2 = 0.0d;
+        double allTotalcust = 0.0d;
         for (Bill b : customerBills.values())
         {
-            allTotal2 += b.billTotal;
+            allTotalcust += b.billTotal;
         }
-        return allTotal2;
+        return allTotalcust;
     }
 }
