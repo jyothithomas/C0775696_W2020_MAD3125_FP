@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFF"
+    android:padding="10dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/billsplash"
+        android:id="@+id/loginImage"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginImage"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@mipmap/ic_launcher_email_round"
+        android:hint="Username"
+        android:imeOptions="actionNext"
+        android:inputType="textNoSuggestions" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@mipmap/ic_launcher_pwd_round"
+        android:hint="Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/saveLoginCheckBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextPassword"
+        android:text="Save Login?"
+        android:textColor="#303" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/saveLoginCheckBox"
+        android:layout_marginTop="40dp"
+        android:text="Login" />
+
+</RelativeLayout>
