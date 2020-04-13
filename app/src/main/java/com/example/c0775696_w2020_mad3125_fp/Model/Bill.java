@@ -15,11 +15,11 @@ public abstract class Bill implements Serializable {
         Internet,
     }
     String billId;
-    LocalDate billDate;
+    String billDate;
     BillType billType;
     Double billTotal = 0.0;
 
-    Bill(String billId, LocalDate billDate, BillType billType)
+    Bill(String billId, String billDate, BillType billType)
     {
         this.billId = billId;
         this.billDate = billDate;
@@ -39,11 +39,11 @@ public abstract class Bill implements Serializable {
         this.billId = billId;
     }
 
-    public LocalDate getBillDate() {
+    public String getBillDate() {
         return billDate;
     }
 
-    public void setBillDate(LocalDate billDate) {
+    public void setBillDate(String billDate) {
         this.billDate = billDate;
     }
 
