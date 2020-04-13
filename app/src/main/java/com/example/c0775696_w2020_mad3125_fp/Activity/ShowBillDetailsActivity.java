@@ -15,6 +15,7 @@ import com.example.c0775696_w2020_mad3125_fp.Fragments.BillFragment;
 import com.example.c0775696_w2020_mad3125_fp.Model.Bill;
 import com.example.c0775696_w2020_mad3125_fp.Model.Customer;
 import com.example.c0775696_w2020_mad3125_fp.R;
+import com.example.c0775696_w2020_mad3125_fp.Util.UtilMethods;
 
 import java.util.ArrayList;
 
@@ -36,7 +37,7 @@ public class ShowBillDetailsActivity extends AppCompatActivity {
 
         txtTotalAmount = findViewById(R.id.txtTotalAmount);
         imgAddButton = findViewById(R.id.imgAddBill);
-        imgAddButton.setImageResource(R.drawable.);
+        imgAddButton.setImageResource(R.drawable.ic_action_addbill);
 
         imgAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +47,7 @@ public class ShowBillDetailsActivity extends AppCompatActivity {
             }
         });
 
-        txtTotalAmount.setText(HelperMethods.getInstance().doubleFormatter(customerObj.getTotalAmount()));
+        txtTotalAmount.setText(UtilMethods.getInstance().doubleFormatter(customerObj.getTotalAmount()));
 
         ActionBar mActionBar = getSupportActionBar();
         mActionBar.hide();
