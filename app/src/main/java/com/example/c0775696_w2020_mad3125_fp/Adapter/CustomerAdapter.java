@@ -50,9 +50,10 @@ public void onBindViewHolder(@NonNull final CustomerViewHolder holder, final int
 public void onClick(View view)
         {
         Customer customer = customersArrayList.get(position);
-        Intent attractionIntent = new Intent(holder.itemView.getContext(), ShowBillDetailsActivity.class);
+        Intent mIntent = new Intent(holder.itemView.getContext(), ShowBillDetailsActivity.class);
            // Intent mIntent = new Intent(holder.itemView.getContext(), ShowBillDetailsActivity.class);
-            attractionIntent.putExtra("CustomerBills", customer);
+            mIntent.putExtra("CustomerBills", customer);
+            holder.itemView.getContext().startActivity(mIntent);
         /*Bundle bundle = new Bundle();
         bundle.putSerializable("customerskey", customer);
         attractionIntent.putExtras(bundle);
