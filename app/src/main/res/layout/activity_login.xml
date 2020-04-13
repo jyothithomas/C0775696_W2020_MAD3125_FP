@@ -37,10 +37,11 @@
         android:id="@+id/saveLoginCheckBox"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/editTextPassword"
+        android:layout_alignParentLeft="true"
         android:text="Save Login?"
-        android:textColor="#303" />
+        android:textColor="#0C0C0C"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/buttonLogin"
