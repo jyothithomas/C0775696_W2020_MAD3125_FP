@@ -38,6 +38,7 @@ public class CustomerListActivity extends AppCompatActivity {
         customers.add(new Customer("C01","Jyothi","Thomas",
                 "Female","jyothi@mail.com","joe123","joe123","Scarborough",
                 "01/01/1991",R.drawable.billsplash));
+
     }
 
 }

@@ -74,8 +74,8 @@ public class CustomerViewHolder extends RecyclerView.ViewHolder {
 
     public CustomerViewHolder(@NonNull View itemView) {
         super(itemView);
-        this.txtName = itemView.findViewById(R.id.txt_attraction_name);
-        this.imgAttractions = itemView.findViewById(R.id.img_canada_attraction);
+        this.txtName = itemView.findViewById(R.id.txt_customer_name);
+        this.imgAttractions = itemView.findViewById(R.id.img_customer);
     }
 }
 }
