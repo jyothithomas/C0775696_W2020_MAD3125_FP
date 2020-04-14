@@ -53,6 +53,7 @@ public class CustomerListActivity extends AppCompatActivity {
             case R.id.btnLogout:
                 Intent logout = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(logout);
+                finish();
                 return true;
         }
         return true;
