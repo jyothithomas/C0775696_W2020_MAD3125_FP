@@ -76,7 +76,7 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillsViewHolde
             textBillID = itemView.findViewById(R.id.txtBillId);
             textBillDate = itemView.findViewById(R.id.txtBillDate);
             textBillType = itemView.findViewById(R.id.txtBillType);
-            textBillAmount = itemView.findViewById(R.id.txtTotalAmount);
+            textBillAmount = itemView.findViewById(R.id.txtBillAmount);
             imgBillType = itemView.findViewById(R.id.imgBillType);
         }
     }

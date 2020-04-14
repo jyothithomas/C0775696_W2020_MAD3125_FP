@@ -30,10 +30,6 @@ public class Customer implements Parcelable {
         this.gender = gender;
     }
 
-    public String getGenderLetter()
-    {
-        return getGender().substring(0,1).toUpperCase();
-    }
 
     protected Customer(Parcel in) {
         customerId = in.readString();
