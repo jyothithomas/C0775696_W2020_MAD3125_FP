@@ -47,8 +47,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
 
     }
-
-
     public void onClick(View view) {
         if (view == ok) {
             InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -73,10 +71,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             goNext();
         }
     }
-
-
-
-
     public void goNext() {
         if (editTextUsername.getText().toString().equals("jyothi05@mail.com") && (editTextPassword.getText().toString().equals("jyothi05"))) {
             startActivity(new Intent(LoginActivity.this, CustomerListActivity.class));
