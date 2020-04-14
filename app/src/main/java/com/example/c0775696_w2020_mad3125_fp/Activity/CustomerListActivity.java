@@ -57,7 +57,7 @@ public class CustomerListActivity extends AppCompatActivity {
                 return true;
             case R.id.btnAdd:
                 startActivity(new Intent(CustomerListActivity.this, AddNewCustomerActivity.class));
-                CustomerListActivity.this.finish();
+                //CustomerListActivity.this.finish();
         }
         return true;
     }
