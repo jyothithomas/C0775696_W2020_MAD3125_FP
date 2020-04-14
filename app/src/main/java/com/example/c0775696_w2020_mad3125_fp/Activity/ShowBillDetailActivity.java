@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.c0775696_w2020_mad3125_fp.Adapter.BillAdapter;
 import com.example.c0775696_w2020_mad3125_fp.Model.Customer;
 import com.example.c0775696_w2020_mad3125_fp.R;
+import com.example.c0775696_w2020_mad3125_fp.Util.UtilMethods;
 
 import java.util.ArrayList;
 
@@ -20,7 +21,7 @@ public class ShowBillDetailActivity extends AppCompatActivity {
     private ArrayList billsArrayList;
     private BillAdapter billsAdapter;
     private ImageView imgAddButton;
-    private TextView txtTotalAmountValue;
+    private TextView txtTotalAmount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +32,13 @@ public class ShowBillDetailActivity extends AppCompatActivity {
         Intent mIntent = getIntent();
         Customer customerObj = mIntent.getParcelableExtra("CustomerBills");
         billsArrayList = customerObj.getBills();
+        txtTotalAmount = findViewById(R.id.txtTotalAmount);
+        if(!billsArrayList.isEmpty()){
+            txtTotalAmount.setText("Total:"+ UtilMethods.getInstance().doubleFormatter((customerObj.getTotalAmount())));
+        }
+        else
+        {
+            txtTotalAmount.setText("No bills for this Customer.");
+        }
     }
 }
