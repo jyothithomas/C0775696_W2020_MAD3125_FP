@@ -53,6 +53,7 @@ public class ShowBillDetailActivity extends AppCompatActivity {
         rvBillsList.setLayoutManager(mLinearLayoutManager);
         rvBillsList.setAdapter(billsAdapter);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
