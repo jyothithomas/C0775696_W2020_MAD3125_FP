@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
-        <activity android:name=".Activity.ShowBillDetailActivity"></activity>
+        <activity android:name=".Activity.DetailedBillActivity"></activity>
+        <activity android:name=".Activity.ShowBillDetailActivity" />
         <activity android:name=".Activity.AddNewCustomerActivity" />
         <activity android:name=".Activity.AddNewBillActivity" />
         <activity android:name=".Activity.ShowBillDetailsActivity" />
