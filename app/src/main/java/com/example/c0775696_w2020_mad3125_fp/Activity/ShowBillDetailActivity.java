@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.c0775696_w2020_mad3125_fp.Adapter.BillAdapter;
@@ -40,5 +41,12 @@ public class ShowBillDetailActivity extends AppCompatActivity {
         {
             txtTotalAmount.setText("No bills for this Customer.");
         }
+        rvBillsList = findViewById(R.id.rvBillsList);
+        billsAdapter = new BillAdapter(this.billsArrayList);
+
+        RecyclerView.LayoutManager mLinearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+
+        rvBillsList.setLayoutManager(mLinearLayoutManager);
+        rvBillsList.setAdapter(billsAdapter);
     }
 }
