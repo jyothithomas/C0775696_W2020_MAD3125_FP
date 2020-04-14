@@ -50,7 +50,6 @@ public void onClick(View view)
         {
         Customer customer = customersArrayList.get(position);
         Intent mIntent = new Intent(holder.itemView.getContext(), ShowBillDetailActivity.class);
-           // Intent mIntent = new Intent(holder.itemView.getContext(), ShowBillDetailsActivity.class);
             mIntent.putExtra("CustomerBills", customer);
             holder.itemView.getContext().startActivity(mIntent);
         /*Bundle bundle = new Bundle();

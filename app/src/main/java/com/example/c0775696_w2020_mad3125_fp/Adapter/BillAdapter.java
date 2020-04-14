@@ -36,7 +36,7 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillsViewHolde
         return mBillsViewHolder;
     }
     @Override
-    public void onBindViewHolder(@NonNull BillsViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final BillsViewHolder holder, final int position) {
         Bill mBills = this.billArrayList.get(position);
         if(mBills.getBillType().equals(Bill.BillType.Mobile))
         {
@@ -54,10 +54,8 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillsViewHolde
         holder.textBillType.setText(mBills.getBillType().toString());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Bill billObj = billArrayList.get(position);
-
+ @Override
+ public void onClick(View v) { Bill billObj = billArrayList.get(position);
                 Intent mIntent = new Intent(holder.itemView.getContext(), DetailedBillActivity.class);
                 mIntent.putExtra("Bills", billObj);
                 holder.itemView.getContext().startActivity(mIntent);
