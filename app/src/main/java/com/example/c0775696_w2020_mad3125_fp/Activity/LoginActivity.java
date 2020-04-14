@@ -48,6 +48,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
+
     public void onClick(View view) {
         if (view == ok) {
             InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -74,6 +75,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
+
+
     public void goNext() {
         if (editTextUsername.getText().toString().equals("jyothi05@mail.com") && (editTextPassword.getText().toString().equals("jyothi05"))) {
             startActivity(new Intent(LoginActivity.this, CustomerListActivity.class));
@@ -83,6 +86,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             new MaterialAlertDialogBuilder(LoginActivity.this)
                     .setTitle("Invalid username or password")
                     .setMessage("Please enter valid credentials")
+                    .setIcon(R.drawable.man)
                     .setNegativeButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
