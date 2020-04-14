@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.c0775696_w2020_mad3125_fp.Activity.ShowBillDetailsActivity;
+import com.example.c0775696_w2020_mad3125_fp.Activity.ShowBillDetailActivity;
 import com.example.c0775696_w2020_mad3125_fp.Model.Customer;
 import com.example.c0775696_w2020_mad3125_fp.R;
 
@@ -49,7 +49,7 @@ public void onBindViewHolder(@NonNull final CustomerViewHolder holder, final int
 public void onClick(View view)
         {
         Customer customer = customersArrayList.get(position);
-        Intent mIntent = new Intent(holder.itemView.getContext(), ShowBillDetailsActivity.class);
+        Intent mIntent = new Intent(holder.itemView.getContext(), ShowBillDetailActivity.class);
            // Intent mIntent = new Intent(holder.itemView.getContext(), ShowBillDetailsActivity.class);
             mIntent.putExtra("CustomerBills", customer);
             holder.itemView.getContext().startActivity(mIntent);
