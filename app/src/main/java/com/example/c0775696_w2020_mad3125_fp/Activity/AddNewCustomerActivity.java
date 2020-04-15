@@ -120,57 +120,57 @@ public class AddNewCustomerActivity extends AppCompatActivity {
     }
     public void fieldCheck()
     {
-        boolean someFlag = false;
+        boolean Flag = false;
         if(edtCustomerIdText.getText().toString().isEmpty())
         {
             edtCustomerId.setError("Please enter customer ID");
-            someFlag = true;
+            Flag = true;
             return;
         }
         if(edtFirstNameText.getText().toString().isEmpty()){
             edtFirstName.setError("Please enter first name");
-            someFlag = true;
+            Flag = true;
             return;
         }
         if(edtLastNameText.getText().toString().isEmpty())
         {
             edtLastName.setError("Please enter last name");
-            someFlag = true;
+            Flag = true;
             return;
         }
         if(edtBirthDateText.getText().toString().isEmpty())
         {
             edtBirthDate.setError("Please enter date of birth");
-            someFlag = true;
+            Flag = true;
             return;
         }
         if(edtUsernameText.getText().toString().isEmpty())
         {
             edtUsername.setErrorEnabled(true);
             edtUsername.setError("Please enter username");
-            someFlag = true;
+            Flag = true;
             return;
         }
         if(edtEmailText.getText().toString().isEmpty())
         {
             edtEmail.setError("Please enter email");
-            someFlag = true;
+            Flag = true;
             return;
         }
         if(edtPasswordText.getText().toString().isEmpty())
         {
             edtPassword.setErrorEnabled(true);
             edtPassword.setError("Please enter password");
-            someFlag = true;
+            Flag = true;
             return;
         }
         if(edtLocationText.getText().toString().isEmpty())
         {
             edtLocation.setError("Please enter location");
-            someFlag = true;
+            Flag = true;
             return;
         }
-        if(!someFlag) {
+        if(!Flag) {
             if(getGender().equals("Female")) {
                 Customer customer = new Customer(edtCustomerIdText.getText().toString(),
                         edtFirstNameText.getText().toString(),
