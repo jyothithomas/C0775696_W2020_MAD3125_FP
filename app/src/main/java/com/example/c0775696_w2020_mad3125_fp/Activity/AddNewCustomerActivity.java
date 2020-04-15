@@ -171,22 +171,62 @@ public class AddNewCustomerActivity extends AppCompatActivity {
             return;
         }
         if(!someFlag) {
-            Customer customer = new Customer(edtCustomerIdText.getText().toString(),
-                    edtFirstNameText.getText().toString(),
-                    edtLastNameText.getText().toString(),
-                    getGender(),
-                    edtEmailText.getText().toString(),
-                    edtUsernameText.getText().toString(),
-                    edtPasswordText.getText().toString(),
-                    edtLocationText.getText().toString(),
-                    edtBirthDateText.getText().toString(),
-                    R.drawable.women);
-            DataSingelton.getInstance().getCustomerMap().put(customer.getCustomerId(), customer);
-            Intent mIntent = new Intent(AddNewCustomerActivity.this, CustomerListActivity.class);
-            mIntent.putExtra("Customer", customer);
-            startActivity(mIntent);
+            if(getGender().equals("Female")) {
+                Customer customer = new Customer(edtCustomerIdText.getText().toString(),
+                        edtFirstNameText.getText().toString(),
+                        edtLastNameText.getText().toString(),
+                        getGender(),
+                        edtEmailText.getText().toString(),
+                        edtUsernameText.getText().toString(),
+                        edtPasswordText.getText().toString(),
+                        edtLocationText.getText().toString(),
+                        edtBirthDateText.getText().toString(),
+                        R.drawable.women);
+                DataSingelton.getInstance().getCustomerMap().put(customer.getCustomerId(), customer);
+                Intent mIntent = new Intent(AddNewCustomerActivity.this, CustomerListActivity.class);
+                mIntent.putExtra("Customer", customer);
+                startActivity(mIntent);
+
+            }
+
+            else if(getGender().equals("Male"))
+            {
+                Customer customer = new Customer(edtCustomerIdText.getText().toString(),
+                        edtFirstNameText.getText().toString(),
+                        edtLastNameText.getText().toString(),
+                        getGender(),
+                        edtEmailText.getText().toString(),
+                        edtUsernameText.getText().toString(),
+                        edtPasswordText.getText().toString(),
+                        edtLocationText.getText().toString(),
+                        edtBirthDateText.getText().toString(),
+                        R.drawable.man);
+                DataSingelton.getInstance().getCustomerMap().put(customer.getCustomerId(), customer);
+                Intent mIntent = new Intent(AddNewCustomerActivity.this, CustomerListActivity.class);
+                mIntent.putExtra("Customer", customer);
+                startActivity(mIntent);
+            }
+            else if (getGender().equals("Other"))
+            {
+                Customer customer = new Customer(edtCustomerIdText.getText().toString(),
+                        edtFirstNameText.getText().toString(),
+                        edtLastNameText.getText().toString(),
+                        getGender(),
+                        edtEmailText.getText().toString(),
+                        edtUsernameText.getText().toString(),
+                        edtPasswordText.getText().toString(),
+                        edtLocationText.getText().toString(),
+                        edtBirthDateText.getText().toString(),
+                        R.drawable.other);
+                DataSingelton.getInstance().getCustomerMap().put(customer.getCustomerId(), customer);
+                Intent mIntent = new Intent(AddNewCustomerActivity.this, CustomerListActivity.class);
+                mIntent.putExtra("Customer", customer);
+                startActivity(mIntent);
+
+            }
+            }
+
         }
-    }
 
     public String getGender()
     {
