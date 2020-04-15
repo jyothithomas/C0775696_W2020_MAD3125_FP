@@ -7,7 +7,7 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/btnAdd"
-        android:icon="@drawable/ic_action_addcust"
+        android:icon="@drawable/add"
         android:title="Add Customer"
         app:showAsAction="always" />
 </menu>
