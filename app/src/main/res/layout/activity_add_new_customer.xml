@@ -97,7 +97,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:startIconDrawable="@android:drawable/ic_menu_info_details">
+        app:startIconDrawable="@android:drawable/ic_menu_help">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtCustomerIdText"
@@ -336,7 +336,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:startIconDrawable="@android:drawable/ic_menu_myplaces">
+        app:startIconDrawable="@android:drawable/ic_menu_always_landscape_portrait">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtLocationText"
