@@ -69,9 +69,6 @@ public class ShowBillDetailActivity extends AppCompatActivity {
                 startActivity(logout);
                 finish();
                 return true;
-            case R.id.btnAdd:
-                startActivity(new Intent(ShowBillDetailActivity.this, AddNewBillActivity.class));
-                //CustomerListActivity.this.finish();
         }
         return true;
     }

@@ -5,9 +5,5 @@
         android:icon="@drawable/logout"
         android:title="Logout"
         app:showAsAction="always" />
-    <item
-        android:id="@+id/btnAdd"
-        android:icon="@drawable/ic_action_addcust"
-        android:title="Add Customer"
-        app:showAsAction="always" />
+
 </menu>
