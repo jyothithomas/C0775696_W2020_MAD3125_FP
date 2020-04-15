@@ -91,7 +91,7 @@ public class AddNewCustomerActivity extends AppCompatActivity {
 
                 DatePickerDialog dialog = new DatePickerDialog(
                         AddNewCustomerActivity.this,
-                        android.R.style.Theme_DeviceDefault_DayNight,
+                        android.R.style.Widget_Holo_ActionBar_Solid,
                         mDateSetListener,
                         year, month, day);
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -105,9 +105,9 @@ public class AddNewCustomerActivity extends AppCompatActivity {
                 month = month + 1;
                 String monthName = getMonthName(month);
                 if (day < 10) {
-                    date = "0" + day + "-" + monthName + "-" + year;
+                    date = "0" + day + "/" + monthName + "/" + year;
                 } else {
-                    date = day + "-" + monthName + "-" + year;
+                    date = day + "/" + monthName + "/" + year;
                 }
                 edtBirthDateText.setText(date);
             }

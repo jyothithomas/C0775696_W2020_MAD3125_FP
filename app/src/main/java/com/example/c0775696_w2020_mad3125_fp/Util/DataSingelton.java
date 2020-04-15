@@ -24,12 +24,12 @@ public class DataSingelton {
     {
         Customer c1 = new Customer("C01","Jyothi","Thomas",
                 "Female","jyothi@mail.com","joe123","joe123","Scarborough",
-                "01/01/1991", R.drawable.women);
+                "01/Jan/1991", R.drawable.women);
         Customer c2 = new Customer("C02","James","Thomas",
                 "Male","james@mail.com","jamz123","jamz123","Kerala",
-                "01/01/1988",R.drawable.man);
+                "01/Aug/1988",R.drawable.man);
         Mobile m1 = new Mobile("MB01",
-                "9/10/2010",
+                "09/Oct/2010",
                 Bill.BillType.Mobile,
                 "APPLE INC.",
                 "All Canada Plan",
@@ -37,12 +37,12 @@ public class DataSingelton {
                 3,
                 12);
         Hydro h1 = new Hydro( "HY01",
-                "12/12/2012",
+                "12/Dec/2012",
                 Bill.BillType.Hydro,
                 "ElectroHydro",
                 18);
         Internet in1 = new Internet("IN01",
-               "11/1/2013",
+               "11/Jun/2013",
                 Bill.BillType.Internet,
                 "Rogers",
                 21.3);
