@@ -21,7 +21,7 @@
         android:layout_marginBottom="908dp"
         android:paddingLeft="5dp"
         android:paddingRight="10dp"
-        android:shadowColor="#0E0000"
+        android:shadowColor="#000000"
         android:text="Type of Bill"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -32,7 +32,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtNumber"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="387dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -41,13 +41,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColorHint="#000000"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#10FDF9"
         app:boxStrokeWidth="4dp"
         app:errorEnabled="false"
         app:errorIconTintMode="src_atop"
-        app:errorTextColor="#10FDF9"
-        app:hintTextColor="#020000"
+        app:hintTextColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +64,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtUnitsUsed"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="387dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -76,13 +73,10 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColorHint="#000000"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#10FDF9"
         app:boxStrokeWidth="4dp"
         app:errorEnabled="false"
         app:errorIconTintMode="src_atop"
-        app:errorTextColor="#10FDF9"
-        app:hintTextColor="#020000"
+        app:hintTextColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,9 +88,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:cursorVisible="true"
-            android:hint="ENTER UNITS USED"
-            android:textColor="#050000"
-            android:textColorHint="#050000"
+            android:hint="Enter Units Used"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -112,11 +106,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColorHint="#000000"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#10FDF9"
         app:boxStrokeWidth="4dp"
         app:errorEnabled="false"
-        app:errorTextColor="#10FDF9"
         app:hintTextColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -131,8 +122,8 @@
             android:layout_height="match_parent"
             android:cursorVisible="true"
             android:hint="Enter BillId"
-            android:textColor="#050000"
-            android:textColorHint="#050000"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -145,7 +136,6 @@
         android:layout_marginEnd="102dp"
         android:layout_marginBottom="891dp"
         android:text="Add New Bill Details"
-        android:textColor="@color/colorPrimary"
         android:textColorHighlight="#00FFFFFF"
         android:textColorHint="#00FFFFFF"
         android:textColorLink="#00FFFFFF"
@@ -167,12 +157,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColorHint="#000000"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#10FDF9"
         app:boxStrokeWidth="4dp"
         app:errorEnabled="false"
         app:errorTextAppearance="@style/TextAppearance.AppCompat.Small"
-        app:errorTextColor="#10FDF9"
         app:hintTextColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -188,8 +175,8 @@
             android:cursorVisible="true"
             android:focusable="false"
             android:hint="Bill Date"
-            android:textColor="#050000"
-            android:textColorHint="#050000"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -204,11 +191,8 @@
         android:ems="10"
         android:inputType="none"
         android:textColorHint="#000000"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#10FDF9"
         app:boxStrokeWidth="4dp"
         app:errorEnabled="false"
-        app:errorTextColor="#10FDF9"
         app:hintTextColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -222,8 +206,8 @@
             android:layout_height="match_parent"
             android:cursorVisible="true"
             android:hint="Enter Data Used"
-            android:textColor="#050000"
-            android:textColorHint="#050000"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -238,11 +222,8 @@
         android:ems="10"
         android:inputType="none"
         android:textColorHint="#000000"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#10FDF9"
         app:boxStrokeWidth="4dp"
         app:errorEnabled="false"
-        app:errorTextColor="#10FDF9"
         app:hintTextColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -256,8 +237,8 @@
             android:layout_height="match_parent"
             android:cursorVisible="true"
             android:hint="Enter Agency Name"
-            android:textColor="#050000"
-            android:textColorHint="#050000"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -272,11 +253,8 @@
         android:ems="10"
         android:inputType="none|textEmailAddress"
         android:textColorHint="#000000"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#10FDF9"
         app:boxStrokeWidth="4dp"
         app:errorEnabled="false"
-        app:errorTextColor="#10FDF9"
         app:hintTextColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -290,8 +268,8 @@
             android:layout_height="match_parent"
             android:cursorVisible="true"
             android:hint="Enter Minutes Used"
-            android:textColor="#050000"
-            android:textColorHint="#050000"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -307,11 +285,8 @@
         android:ems="10"
         android:inputType="none|textPassword"
         android:textColorHint="#000000"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#10FDF9"
         app:boxStrokeWidth="4dp"
         app:errorEnabled="false"
-        app:errorTextColor="#10FDF9"
         app:hintTextColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -326,8 +301,8 @@
             android:layout_height="match_parent"
             android:cursorVisible="true"
             android:hint="Enter Manufacturer Name"
-            android:textColor="#050000"
-            android:textColorHint="#050000"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:textSize="18sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -342,11 +317,8 @@
         android:ems="10"
         android:inputType="textPersonName|text"
         android:textColorHint="#000000"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#10FDF9"
         app:boxStrokeWidth="4dp"
         app:errorEnabled="false"
-        app:errorTextColor="#10FDF9"
         app:hintTextColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -14,6 +14,6 @@ public class AddNewBillActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_bill);
         ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setTitle("ADD NEw BILL");
+        mActionBar.hide();
     }
 }
