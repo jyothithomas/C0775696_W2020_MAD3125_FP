@@ -180,7 +180,7 @@ public class AddNewCustomerActivity extends AppCompatActivity {
                     edtPasswordText.getText().toString(),
                     edtLocationText.getText().toString(),
                     edtBirthDateText.getText().toString(),
-                    R.drawable.addcustomer);
+                    R.drawable.women);
             DataSingelton.getInstance().getCustomerMap().put(customer.getCustomerId(), customer);
             Intent mIntent = new Intent(AddNewCustomerActivity.this, CustomerListActivity.class);
             mIntent.putExtra("Customer", customer);
