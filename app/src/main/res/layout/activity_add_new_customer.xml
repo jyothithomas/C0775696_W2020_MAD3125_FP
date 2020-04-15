@@ -11,7 +11,7 @@
     tools:context=".Activity.AddNewCustomerActivity">
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtFirstName"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -45,7 +45,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtLastName"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -79,7 +79,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtCustomerId"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -89,7 +89,6 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColorHint="#000000"
-        app:boxStrokeColor="#FFFFFF"
         app:boxStrokeWidth="4dp"
         app:errorEnabled="false"
         app:hintTextColor="#000000"
@@ -132,7 +131,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtBirthDate"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -221,7 +220,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtUsername"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
@@ -254,7 +253,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtEmail"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -287,7 +286,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtPassword"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginStart="12dp"
@@ -320,7 +319,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtLocation"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -375,8 +374,6 @@
         android:layout_marginTop="61dp"
         android:layout_marginEnd="87dp"
         android:layout_marginBottom="73dp"
-        android:background="#EC1010"
-        android:backgroundTint="#FD4949"
         android:text="CLEAR"
         android:textColor="#000000"
         android:textSize="18sp"
