@@ -39,11 +39,11 @@ public class ShowBillDetailActivity extends AppCompatActivity {
         billsArrayList = customerObj.getBills();
         txtTotalAmount = findViewById(R.id.txtTotalAmount);
         if(!billsArrayList.isEmpty()){
-            txtTotalAmount.setText("Total:"+ UtilMethods.getInstance().doubleFormatter((customerObj.getTotalAmount())));
+            txtTotalAmount.setText("Total Bill to Pay:"+ UtilMethods.getInstance().doubleFormatter((customerObj.getTotalAmount())));
         }
         else
         {
-            txtTotalAmount.setText("No bills for this Customer.");
+            txtTotalAmount.setText("No bills to Pay");
         }
         rvBillsList = findViewById(R.id.rvBillsList);
         billsAdapter = new BillAdapter(this.billsArrayList);
