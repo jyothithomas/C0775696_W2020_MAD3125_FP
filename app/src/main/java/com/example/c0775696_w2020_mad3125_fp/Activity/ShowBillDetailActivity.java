@@ -33,7 +33,7 @@ public class ShowBillDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_bill_detail);
         ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setTitle("UTILITY BILLS");
+        mActionBar.setTitle("Utility Bills");
         Intent mIntent = getIntent();
         Customer customerObj = mIntent.getParcelableExtra("CustomerBills");
         billsArrayList = customerObj.getBills();

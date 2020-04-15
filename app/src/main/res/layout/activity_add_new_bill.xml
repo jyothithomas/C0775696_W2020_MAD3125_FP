@@ -348,7 +348,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="824dp"
         android:layout_marginEnd="68dp"
         android:layout_marginBottom="308dp"
         android:text="CLEAR"
@@ -356,8 +355,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnAdd"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/btnAdd" />
 
     <ImageView
         android:id="@+id/imageView2"
