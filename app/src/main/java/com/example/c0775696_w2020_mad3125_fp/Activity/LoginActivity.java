@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.c0775696_w2020_mad3125_fp.R;
@@ -30,6 +31,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        ActionBar mActionBar = getSupportActionBar();
+        mActionBar.hide();
 
         ok = (Button)findViewById(R.id.buttonLogin);
         ok.setOnClickListener(this);
