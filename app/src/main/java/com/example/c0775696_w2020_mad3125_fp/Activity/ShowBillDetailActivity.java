@@ -27,6 +27,7 @@ public class ShowBillDetailActivity extends AppCompatActivity {
     private BillAdapter billsAdapter;
     private ImageView imgAddButton;
     private TextView txtTotalAmount;
+    Customer customerObj;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class ShowBillDetailActivity extends AppCompatActivity {
         ActionBar mActionBar = getSupportActionBar();
         mActionBar.setTitle("Utility Bills");
         Intent mIntent = getIntent();
-        Customer customerObj = mIntent.getParcelableExtra("CustomerBills");
+        customerObj = mIntent.getParcelableExtra("CustomerBills");
         billsArrayList = customerObj.getBills();
         txtTotalAmount = findViewById(R.id.txtTotalAmount);
         if(!billsArrayList.isEmpty()){
@@ -70,7 +71,10 @@ public class ShowBillDetailActivity extends AppCompatActivity {
                 finish();
                 return true;
             case R.id.btnAdd:
-                startActivity(new Intent(ShowBillDetailActivity.this, AddNewBillActivity.class));
+                Intent mIntent = new Intent(ShowBillDetailActivity.this, AddNewBillActivity.class);
+                mIntent.putExtra("CustomerBills2", customerObj);
+                startActivity(mIntent);
+
         }
         return true;
     }
