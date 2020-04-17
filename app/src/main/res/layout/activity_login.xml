@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTextPassword"
         android:layout_alignParentLeft="true"
-        android:text="Save Login?"
+        android:text="Remember me"
         android:textColor="#0C0C0C"
         android:textStyle="bold" />
 
