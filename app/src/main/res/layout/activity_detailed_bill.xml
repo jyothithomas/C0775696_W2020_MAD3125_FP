@@ -11,38 +11,32 @@
         android:layout_height="match_parent"
         tools:context=".Activity.DetailedBillActivity">
 
-        <TextView
-            android:id="@+id/txtBillId"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:layout_marginBottom="562dp"
-            android:text="Bill id"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txtBilltype"
+        <FrameLayout
+            android:id="@+id/container"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="13dp"
-            android:text="Bill Type"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:text="Bill type" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="0dp"
-            android:layout_height="19dp"
-            android:layout_marginBottom="496dp"
-            android:text="TextView"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtBilltype" />
-
+            app:layout_constraintTop_toTopOf="parent">
+        </FrameLayout>
+            <fragment
+                android:id="@+id/fragment"
+                android:name="com.example.c0775696_w2020_mad3125_fp.Fragments.MobileBillFragment"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
