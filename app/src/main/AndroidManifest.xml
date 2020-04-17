@@ -13,7 +13,6 @@
         <activity android:name=".Activity.ShowBillDetailActivity" />
         <activity android:name=".Activity.AddNewCustomerActivity" />
         <activity android:name=".Activity.AddNewBillActivity" />
-        <activity android:name=".Activity.ShowBillDetailsActivity" />
         <activity android:name=".Activity.LoginActivity" />
         <activity android:name=".Activity.CustomerListActivity" />
         <activity android:name=".Activity.SplashActivity">
