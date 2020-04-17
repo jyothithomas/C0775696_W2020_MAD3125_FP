@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class ShowBillDetailActivity extends AppCompatActivity {
     private RecyclerView rvBillsList;
-    private ArrayList billsArrayList;
+    public static ArrayList<Bill> billsArrayList = new ArrayList<>();
     private BillAdapter billsAdapter;
     private ImageView imgAddButton;
     private TextView txtTotalAmount;

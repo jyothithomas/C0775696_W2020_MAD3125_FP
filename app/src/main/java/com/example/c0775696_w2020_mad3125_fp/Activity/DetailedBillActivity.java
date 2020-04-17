@@ -26,25 +26,24 @@ public class DetailedBillActivity extends AppCompatActivity {
 
         Intent mIntent = getIntent();
         Bill billObj = mIntent.getParcelableExtra("Bills");
-
         ActionBar mActionBar = getSupportActionBar();
         mActionBar.hide();
 
         mFragmentManager = getSupportFragmentManager();
 
-        if(billObj.getBillType().equals(Bill.BillType.Mobile)) {
+        if(billObj.getBillId().contains("MB")) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.add(R.id.container, new MobileBillFragment());
             mFragmentTransaction.commit();
         }
-        if(billObj.getBillType().equals(Bill.BillType.Hydro))
+        if(billObj.getBillId().contains("HY"))
         {
             mFragmentManager = getSupportFragmentManager();
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.add(R.id.container, new HydroBillFragment());
             mFragmentTransaction.commit();
         }
-        if(billObj.getBillType().equals(Bill.BillType.Internet))
+        if(billObj.getBillId().contains("IN"))
         {
             mFragmentManager = getSupportFragmentManager();
             mFragmentTransaction = mFragmentManager.beginTransaction();

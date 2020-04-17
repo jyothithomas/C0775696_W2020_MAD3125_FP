@@ -7,6 +7,7 @@ import com.example.c0775696_w2020_mad3125_fp.Model.Internet;
 import com.example.c0775696_w2020_mad3125_fp.Model.Mobile;
 import com.example.c0775696_w2020_mad3125_fp.R;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class DataSingelton {
@@ -16,9 +17,43 @@ public class DataSingelton {
     }
     private DataSingelton() { }
     private HashMap<String, Customer> customerMap = new HashMap<>();
+    private ArrayList<Mobile> mobileBills = new ArrayList<>();
+    private ArrayList<Hydro> hydroBills = new ArrayList<>();
+    private ArrayList<Internet> internetBills = new ArrayList<>();
 
     public HashMap getCustomerMap(){
         return this.customerMap;
+    }
+    public Mobile getMobileBill(String billId) {
+        for(Mobile mb : mobileBills)
+        {
+            if(mb.getBillId() == billId)
+            {
+                return mb;
+            }
+        }
+        return null;
+    }
+
+    public Hydro getHydroBill(String billId) {
+        for(Hydro hb : hydroBills)
+        {
+            if(hb.getBillId() == billId)
+            {
+                return hb;
+            }
+        }
+        return null;
+    }
+    public Internet getInternetBill(String billId) {
+        for(Internet ib : internetBills)
+        {
+            if(ib.getBillId() == billId)
+            {
+                return ib;
+            }
+        }
+        return null;
     }
     public void populateData()
     {
@@ -81,6 +116,14 @@ public class DataSingelton {
         c3.addBill("HY02",h2);
         c4.addBill("MB01",m1);
         c4.addBill("MB02",m2);
+
+        mobileBills.add(m1);
+        mobileBills.add(m2);
+        hydroBills.add(h1);
+        hydroBills.add(h2);
+        internetBills.add(in1);
+        internetBills.add(in2);
+
         customerMap.put(c1.getCustomerId(),c1);
         customerMap.put(c2.getCustomerId(),c2);
         customerMap.put(c3.getCustomerId(),c3);
