@@ -41,7 +41,7 @@ public void onBindViewHolder(@NonNull final CustomerViewHolder holder, final int
         holder.txtDob.setText(mCustomer.getDateOfBirth());
         holder.txtLocation.setText(mCustomer.getLocation());
         holder.txtGender.setText(mCustomer.getGender());
-        holder.imgAttractions.setImageResource(mCustomer.getCustomerImg());
+        holder.imgCustomer.setImageResource(mCustomer.getCustomerImg());
 
         holder.itemView.setOnClickListener(new View.OnClickListener()
         {
@@ -52,15 +52,6 @@ public void onClick(View view)
         Intent mIntent = new Intent(holder.itemView.getContext(), ShowBillDetailActivity.class);
             mIntent.putExtra("CustomerBills", customer);
             holder.itemView.getContext().startActivity(mIntent);
-        /*Bundle bundle = new Bundle();
-        bundle.putSerializable("customerskey", customer);
-        attractionIntent.putExtras(bundle);
-        holder.itemView.getContext().startActivity(attractionIntent);*/
-
-        //Intent mIntent = new Intent(holder.itemView.getContext(), MainActivity.class);
-        //Add Parameter - Parcalble or serializable
-        //holder.itemView.getContext().startActivity(mIntent);
-
         }
         });
         }
@@ -74,7 +65,7 @@ public int getItemCount() {
 public class CustomerViewHolder extends RecyclerView.ViewHolder {
 
     TextView txtName,txtId,txtEmail,txtGender,txtDob,txtLocation;
-    ImageView imgAttractions;
+    ImageView imgCustomer;
 
     public CustomerViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -85,7 +76,7 @@ public class CustomerViewHolder extends RecyclerView.ViewHolder {
         this.txtDob = itemView.findViewById(R.id.txt_customer_dob);
         this.txtLocation = itemView.findViewById(R.id.txt_customer_location);
 
-        this.imgAttractions = itemView.findViewById(R.id.img_customer);
+        this.imgCustomer = itemView.findViewById(R.id.img_customer);
     }
 }
 }

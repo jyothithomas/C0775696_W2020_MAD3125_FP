@@ -25,7 +25,7 @@ public class DetailedBillActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detailed_bill);
 
         Intent mIntent = getIntent();
-        Bill billObj = mIntent.getParcelableExtra("Bills");
+        Bill billObj = (Bill) mIntent.getSerializableExtra("Bills");
         ActionBar mActionBar = getSupportActionBar();
         mActionBar.hide();
 
