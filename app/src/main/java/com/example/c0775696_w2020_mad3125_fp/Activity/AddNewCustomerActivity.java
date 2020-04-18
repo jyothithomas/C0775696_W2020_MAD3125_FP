@@ -178,7 +178,7 @@ public class AddNewCustomerActivity extends AppCompatActivity {
             edtEmail.setError("Please enter a valid email address");
             new MaterialAlertDialogBuilder(AddNewCustomerActivity.this)
                     .setTitle("Invalid email address")
-                    .setMessage("Please check the email you entered")
+                    .setMessage("Please check the email")
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
