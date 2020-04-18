@@ -41,7 +41,6 @@ public class DetailedBillActivity extends AppCompatActivity {
                 tv2.setText("Plan Name::::"+mob.getPlanName());
                 tv6.setText("Manufacturer Name::::"+mob.getManufacturerName());
                 tv4.setText("Mobile Number::::"+mob.getMobileNumber());
-                tv4.setEnabled(false);
             }
             if(billObj.getBillType().equals(Bill.BillType.Hydro))
             {
