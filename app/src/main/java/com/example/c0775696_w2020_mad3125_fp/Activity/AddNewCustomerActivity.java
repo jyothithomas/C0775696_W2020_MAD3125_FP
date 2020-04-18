@@ -1,6 +1,7 @@
 package com.example.c0775696_w2020_mad3125_fp.Activity;
 
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -16,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.c0775696_w2020_mad3125_fp.Model.Customer;
 import com.example.c0775696_w2020_mad3125_fp.R;
 import com.example.c0775696_w2020_mad3125_fp.Util.DataSingelton;
+import com.example.c0775696_w2020_mad3125_fp.Util.UtilMethods;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -170,6 +173,22 @@ public class AddNewCustomerActivity extends AppCompatActivity {
             Flag = true;
             return;
         }
+        if(!UtilMethods.getInstance().emailValidation(edtEmailText.getText().toString()))
+        {
+            edtEmail.setError("Please enter a valid email address");
+            new MaterialAlertDialogBuilder(AddNewCustomerActivity.this)
+                    .setTitle("Invalid email address")
+                    .setMessage("Please check the email you entered")
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    })
+                    .show();
+            Flag = true;
+            return;
+        }
         if(!Flag) {
             if(getGender().equals("Female")) {
                 Customer customer = new Customer(edtCustomerIdText.getText().toString(),
@@ -186,7 +205,6 @@ public class AddNewCustomerActivity extends AppCompatActivity {
                 Intent mIntent = new Intent(AddNewCustomerActivity.this, CustomerListActivity.class);
                 mIntent.putExtra("Customer", customer);
                 startActivity(mIntent);
-
             }
 
             else if(getGender().equals("Male"))
@@ -222,7 +240,6 @@ public class AddNewCustomerActivity extends AppCompatActivity {
                 Intent mIntent = new Intent(AddNewCustomerActivity.this, CustomerListActivity.class);
                 mIntent.putExtra("Customer", customer);
                 startActivity(mIntent);
-
             }
             }
 
