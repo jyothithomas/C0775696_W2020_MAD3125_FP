@@ -24,7 +24,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textHyd1"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="40dp"
@@ -46,7 +46,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textHyd2"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="100dp"
@@ -68,7 +68,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textHy3"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="160dp"
@@ -90,7 +90,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textHy4"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="220dp"
@@ -112,7 +112,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textHyd5"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="278dp"
@@ -134,7 +134,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txtFragAgency"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="245dp"
         android:layout_marginTop="220dp"
@@ -156,7 +156,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txtFragUnitsUsed"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="245dp"
         android:layout_marginTop="278dp"
@@ -178,7 +178,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txtFragHydBillId"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="245dp"
         android:layout_marginTop="40dp"
@@ -201,7 +201,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txtFragHydBillDate"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="245dp"
         android:layout_marginTop="100dp"
@@ -223,7 +223,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txtFragHydBillAmount"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="245dp"
         android:layout_marginTop="160dp"

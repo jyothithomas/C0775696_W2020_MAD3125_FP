@@ -10,9 +10,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Activity.DetailedBillActivity">
-
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.example.c0775696_w2020_mad3125_fp.Fragments.MobileBillFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         <FrameLayout
-            android:id="@+id/container"
+            android:id="@+id/container_mobile"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="12dp"
@@ -25,22 +37,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
         </FrameLayout>
-            <fragment
-                android:id="@+id/fragment"
-                android:name="com.example.c0775696_w2020_mad3125_fp.Fragments.MobileBillFragment"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="100dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        <fragment
-            android:id="@+id/fragmenthydro"
-            android:name="com.example.c0775696_w2020_mad3125_fp.Fragments.HydroBillFragment"
+        <FrameLayout
+            android:id="@+id/container_hydro"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="12dp"
@@ -49,11 +47,12 @@
             android:layout_marginBottom="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-        <fragment
-            android:id="@+id/fragmentInternet"
-            android:name="com.example.c0775696_w2020_mad3125_fp.Fragments.InternetBillFragment"
+            app:layout_constraintTop_toTopOf="parent">
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/container_internet"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="12dp"
@@ -62,7 +61,9 @@
             android:layout_marginBottom="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+        </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

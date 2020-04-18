@@ -5,11 +5,10 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.c0775696_w2020_mad3125_fp.Fragments.HydroBillFragment;
-import com.example.c0775696_w2020_mad3125_fp.Fragments.InternetBillFragment;
 import com.example.c0775696_w2020_mad3125_fp.Fragments.MobileBillFragment;
 import com.example.c0775696_w2020_mad3125_fp.Model.Bill;
 import com.example.c0775696_w2020_mad3125_fp.R;
@@ -29,25 +28,26 @@ public class DetailedBillActivity extends AppCompatActivity {
         ActionBar mActionBar = getSupportActionBar();
         mActionBar.hide();
 
+        //mFragmentManager = getSupportFragmentManager();
         mFragmentManager = getSupportFragmentManager();
+        mFragmentTransaction = mFragmentManager.beginTransaction();
+        Fragment mFragment = null;
 
         if(billObj.getBillId().contains("MB")) {
-            mFragmentTransaction = mFragmentManager.beginTransaction();
-            mFragmentTransaction.add(R.id.container, new MobileBillFragment());
+            mFragment = new MobileBillFragment();
+            mFragmentTransaction.replace(R.id.container_mobile,mFragment);
             mFragmentTransaction.commit();
         }
         if(billObj.getBillId().contains("HY"))
         {
-            mFragmentManager = getSupportFragmentManager();
-            mFragmentTransaction = mFragmentManager.beginTransaction();
-            mFragmentTransaction.add(R.id.container, new HydroBillFragment());
+            mFragment = new MobileBillFragment();
+            mFragmentTransaction.replace(R.id.container_hydro,mFragment);
             mFragmentTransaction.commit();
         }
         if(billObj.getBillId().contains("IN"))
         {
-            mFragmentManager = getSupportFragmentManager();
-            mFragmentTransaction = mFragmentManager.beginTransaction();
-            mFragmentTransaction.add(R.id.container, new InternetBillFragment());
+            mFragment = new MobileBillFragment();
+            mFragmentTransaction.replace(R.id.container_internet,mFragment);
             mFragmentTransaction.commit();
         }
     }
