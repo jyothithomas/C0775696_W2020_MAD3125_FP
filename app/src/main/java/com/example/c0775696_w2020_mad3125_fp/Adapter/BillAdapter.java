@@ -1,7 +1,6 @@
 package com.example.c0775696_w2020_mad3125_fp.Adapter;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,12 +56,10 @@ public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillsViewHolde
         holder.itemView.setOnClickListener(new View.OnClickListener() {
  @Override
  public void onClick(View v) {
-     Bill billObj = billArrayList.get(position);
-     Intent mIntent = new Intent(holder.itemView.getContext(), DetailedBillActivity.class);
-     Bundle bundle = new Bundle();
-     bundle.putSerializable("BillObj", billObj);
-     mIntent.putExtras(bundle);
-     holder.itemView.getContext().startActivity(mIntent);
+                Bill billObj = billArrayList.get(position);
+                Intent mIntent = new Intent(holder.itemView.getContext(), DetailedBillActivity.class);
+                mIntent.putExtra("Bills", billObj);
+                holder.itemView.getContext().startActivity(mIntent);
             }
         });
     }
