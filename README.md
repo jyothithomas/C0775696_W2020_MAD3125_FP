@@ -4,7 +4,7 @@
 # Utility Bill Calculation
 
 |ScreenShot|Description|
-|:...:|:...:|
+---|---
 |Image1|Image2|
 
 References
