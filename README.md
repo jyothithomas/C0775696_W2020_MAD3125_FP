@@ -22,6 +22,9 @@
 |![14](https://github.com/jyothithomas/C0775696_W2020_MAD3125_FP/blob/master/ScreenshotFP/14.png)|If all the details of a particular bill type is entered, we have 2 options either to clear the fields or to submit.|
 |![15](https://github.com/jyothithomas/C0775696_W2020_MAD3125_FP/blob/master/ScreenshotFP/15.png)|On clicking Submit, the newly entered bill is reflected on the bill list.|
 |![16](https://github.com/jyothithomas/C0775696_W2020_MAD3125_FP/blob/master/ScreenshotFP/16.png)|On clicking a particular bill again the detais of a choosen bill is displayed.|
+
+
+
 References
 __________
 * https://androidride.com/convert-java-class-to-kotlin-android-studio/
