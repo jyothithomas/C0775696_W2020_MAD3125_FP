@@ -16,4 +16,5 @@ __________
 8. https://android.jlelse.eu/the-complete-android-splash-screen-guide-c7db82bce565
 9. https://stackoverflow.com/questions/38060002/how-to-hide-show-textview-from-java
 10.https://www.tutorialspoint.com/how-to-check-email-address-validation-in-android-on-edit-text
+11.https://alvinalexander.com/android/how-show-html-string-in-android-textview-webview/
 
