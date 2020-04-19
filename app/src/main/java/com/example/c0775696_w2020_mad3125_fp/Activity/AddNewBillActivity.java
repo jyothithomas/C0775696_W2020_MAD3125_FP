@@ -116,7 +116,7 @@ public class AddNewBillActivity extends AppCompatActivity implements AdapterView
                         return;
                     }
                     if (edtBillDateText.getText().toString().isEmpty()) {
-                        edtBillDateText.setError("Please enter your the bill text");
+                        edtBillDateText.setError("Please enter bill date");
                         Flag = true;
                         return;
                     }
@@ -184,8 +184,8 @@ public class AddNewBillActivity extends AppCompatActivity implements AdapterView
             clearfields();
             edtUnitsUsed.setVisibility(View.VISIBLE);
             edtAgencyName.setVisibility(View.VISIBLE);
-            edtAgencyName.setHint("ENTER AGENCY NAME");
-            edtUnitsUsed.setHint("ENTER UNITS USED");
+            edtAgencyName.setHint("Enter Agency Name");
+            edtUnitsUsed.setHint("Enter Units Used");
             btnBillAdd.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -196,47 +196,19 @@ public class AddNewBillActivity extends AppCompatActivity implements AdapterView
                         return;
                     }
                     if (edtBillDateText.getText().toString().isEmpty()) {
-                        edtBillDateText.setError("Please enter your the bill text");
+                        edtBillDateText.setError("Please enter the bill date");
                         Flag = true;
                         return;
                     }
-                    if (edtNumberText.getText().toString().isEmpty()) {
-                        edtNumberText.setError("Please enter your phone number");
+                    if(edtAgencyNameText.getText().toString().isEmpty())
+                    {
+                        edtNumberText.setError("Please enter the agency");
                         Flag = true;
                         return;
                     }
-                    if (edtDataUsedText.getText().toString().isEmpty()) {
-                        edtDataUsedText.setError("Please enter the data used");
-                        Flag = true;
-                        return;
-                    }
-                    if (edtMinsUsedText.getText().toString().isEmpty()) {
-                        edtMinsUsedText.setError("Please enter the mins used");
-                        Flag = true;
-                        return;
-                    }
-                    if (edtManuftrNameText.getText().toString().isEmpty()) {
-                        edtManuftrNameText.setError("Please enter the manufacturer");
-                        Flag = true;
-                        return;
-                    }
-                    if (edtPlanNameText.getText().toString().isEmpty()) {
-                        edtPlanNameText.setError("Please enter your plan name");
-                        Flag = true;
-                        return;
-                    }
-                    if (!UtilMethods.getInstance().mobileValidation(edtNumberText.getText().toString())) {
-                        edtNumberText.setError("Invalid Phone number");
-                        new MaterialAlertDialogBuilder(AddNewBillActivity.this)
-                                .setTitle("Invalid phone number")
-                                .setMessage("Please check the phone number")
-                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        dialog.dismiss();
-                                    }
-                                })
-                                .show();
+                    if(edtUnitsUsedText.getText().toString().isEmpty())
+                    {
+                        edtDataUsedText.setError("Please enter the units used");
                         Flag = true;
                         return;
                     }
@@ -262,8 +234,8 @@ public class AddNewBillActivity extends AppCompatActivity implements AdapterView
             clearfields();
             edtUnitsUsed.setVisibility(View.VISIBLE);
             edtAgencyName.setVisibility(View.VISIBLE);
-            edtAgencyName.setHint("ENTER PROVIDER NAME");
-            edtUnitsUsed.setHint("ENTER DATA USED");
+            edtAgencyName.setHint("Enter Provider Name");
+            edtUnitsUsed.setHint("Enter Data Used");
             btnBillAdd.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -274,47 +246,19 @@ public class AddNewBillActivity extends AppCompatActivity implements AdapterView
                         return;
                     }
                     if (edtBillDateText.getText().toString().isEmpty()) {
-                        edtBillDateText.setError("Please enter your the bill text");
+                        edtBillDateText.setError("Please enter the bill date");
                         Flag = true;
                         return;
                     }
-                    if (edtNumberText.getText().toString().isEmpty()) {
-                        edtNumberText.setError("Please enter your phone number");
+                    if(edtAgencyNameText.getText().toString().isEmpty())
+                    {
+                        edtNumberText.setError("Please enter the provider");
                         Flag = true;
                         return;
                     }
-                    if (edtDataUsedText.getText().toString().isEmpty()) {
+                    if(edtUnitsUsedText.getText().toString().isEmpty())
+                    {
                         edtDataUsedText.setError("Please enter the data used");
-                        Flag = true;
-                        return;
-                    }
-                    if (edtMinsUsedText.getText().toString().isEmpty()) {
-                        edtMinsUsedText.setError("Please enter the mins used");
-                        Flag = true;
-                        return;
-                    }
-                    if (edtManuftrNameText.getText().toString().isEmpty()) {
-                        edtManuftrNameText.setError("Please enter the manufacturer");
-                        Flag = true;
-                        return;
-                    }
-                    if (edtPlanNameText.getText().toString().isEmpty()) {
-                        edtPlanNameText.setError("Please enter your plan name");
-                        Flag = true;
-                        return;
-                    }
-                    if (!UtilMethods.getInstance().mobileValidation(edtNumberText.getText().toString())) {
-                        edtNumberText.setError("Invalid Phone number");
-                        new MaterialAlertDialogBuilder(AddNewBillActivity.this)
-                                .setTitle("Invalid phone number")
-                                .setMessage("Please check the phone number")
-                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        dialog.dismiss();
-                                    }
-                                })
-                                .show();
                         Flag = true;
                         return;
                     }
@@ -322,7 +266,7 @@ public class AddNewBillActivity extends AppCompatActivity implements AdapterView
 
                         Internet iObj = new Internet(edtBillIdText.getText().toString(),
                                 edtBillDateText.getText().toString(),
-                                Bill.BillType.Hydro,
+                                Bill.BillType.Internet,
                                 edtAgencyNameText.getText().toString(),
                                 Double.parseDouble(edtUnitsUsedText.getText().toString()));
                         custObj.getCustomerBills().put(iObj.getBillId(), iObj);
