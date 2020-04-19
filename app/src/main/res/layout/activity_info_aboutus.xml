@@ -6,4 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".Activity.InfoAboutusActivity">
 
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="396dp"
+        android:layout_height="557dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
