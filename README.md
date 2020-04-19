@@ -3,6 +3,7 @@
 
 # Utility Bill Calculation
 
+# Output
 |ScreenShot|Description|
 ---|---
 |Image1|Image2|
