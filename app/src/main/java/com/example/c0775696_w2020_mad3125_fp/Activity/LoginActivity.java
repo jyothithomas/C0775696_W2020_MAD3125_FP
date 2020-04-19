@@ -10,6 +10,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +21,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     private String username,password;
+    private ImageView btnInfo;
     private Button ok;
     private EditText editTextUsername,editTextPassword;
     private CheckBox saveLoginCheckBox;
@@ -36,6 +38,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mActionBar.hide();
 
         ok = (Button)findViewById(R.id.buttonLogin);
+        btnInfo = (ImageView)findViewById(R.id.infoImage);
+        btnInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, InfoAboutusActivity.class));
+            }
+        });
         ok.setOnClickListener(this);
         editTextUsername = (EditText)findViewById(R.id.editTextUsername);
         editTextPassword = (EditText)findViewById(R.id.editTextPassword);
